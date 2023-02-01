@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1. 가로 22.1, 세로 33.1
+        //  사각형의 면적을 구해서 출력하세요.
+        //2. 커피 한 잔 가격이 4500원 이고, 5잔을 결제하였습니.
+        //  총 결제금액을 출력해주세요.
+        //3. 사과의 가격이 2000원 배의 가격이 3000원이고
+        //  사과는 3개, 배는 2개를 결제하였으면 총 결제금액은 얼마인가?
+        //4. 어제 온도 25도, 오늘 온도 10도이면
+        //  어제와 오늘 온도의 평균은?
+
+        x = prompt("1번문제) 사각형의 가로 길이를 입력하세요. 22.1")
+        y = prompt("1번문제) 사각형의 세로 길이를 입력하세요 33.1")
+        result_1 = parseFloat(x) * parseFloat(y)
+        alert("1번문제) 사각형의 면적은 " + result_1 + " 입니다.")
+
+        coffee_money = prompt("2번문제) 사과의 가격은 얼마입니까? 2000")
+        how_many = prompt("2번문제) 커피를 몇 잔을 구매하셨나요? 5잔")
+        result_2 = parseFloat(coffee_money) * parseFloat(how_many)
+        alert("2번문제) 커피의 총 결제금액은 " + result_2 + "원 입니다.")
+
+        apple_money = prompt("3번문제) 사과의 가격이 얼마입니까? 2000")
+        pear_money = prompt("3번문제) 배의 가격이 얼마입니까? 3000")
+        apple_many = prompt("3번문제) 사과는 몇개 사셨습니까? 3")
+        pear_many = prompt("3번문제) 배는 몇개 사셨습니까? 2")
+        result_3 = parseFloat(apple_money) * parseFloat(apple_many) + parseFloat(pear_money) * parseFloat(pear_many)
+        alert("3번문제) 사과와 배의 총 결제금액은 " + result_3 + "원 입니다.")
+
+        yesterday_temp = prompt("4번문제) 어제의 온도는 몇도였습니까? 25")
+        today_temp = prompt("4번문제) 오늘의 온도는 몇도입니까? 10")
+        result_4 = (parseFloat(yesterday_temp) + parseFloat(today_temp)) * 0.5
+        alert("4번문제) 어제와 오늘 온도의 평균값은 " + result_4 + "도 입니다.")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
