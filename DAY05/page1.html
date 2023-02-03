@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function tour() { //결제처리 기능 정의
+            //alert('내가 실행되어요!!')
+            //1. 입력-입력한 값 가지고 오기
+            place = document.getElementById('place').value //"com"
+            month = document.getElementById('month').value //"com"
+            how = document.getElementById('choice').value //"com"
+
+            //2. 처리-결제금액 계산해주기
+            //숫자로 변환해주는 처리
+            month = parseInt(month)
+            choice = parseInt(how)
+            if (choice == '1') { //신용카드 + 1000
+                choice2 = "30000", choice = "비행기" //cpu가 money2의 값을 가지고와서 1000을 더해줌.
+            } else if (choice == '2') {
+                choice2 = "10000", choice = "버스"
+            } else if (choice == '3') {
+                choice2 = "50000", choice = "자가용"
+            }
+            text = "나는 " + month + "월에 " + choice + "를 타고 " + place + " 여행을 갑니다. 비용은 " + choice2 + "원 입니다."
+            //3. 출력-결과를 출력 
+            result_tag = document.getElementById('result')
+            result_tag.innerHTML = text
+        }
+    </script>
+</head>
+
+<body>
+    여행가고 싶은 곳: <input type="text" value="부산" id="place"> <br>
+    여행 일시 (월): <input type="text" value="1" id="month"> <br>
+    여행 수단: 1)비행기(30000), 2)버스(10000), 3)자가용(50000) <br>
+    <input type="text" value="1" id="choice"> <br>
+    <button onclick="tour()">여행 가기</button>
+    <div id="result">
+
+    </div>
+</body>
+
+</html>

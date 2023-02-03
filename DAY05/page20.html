@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            list-style: none;
+            float: left;
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+        }
+
+        a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        li:nth-child(2n) {
+            background-color: orange;
+        }
+
+        li:nth-child(2n+1) {
+            background-color: yellow;
+        }
+
+        li:first-child {
+            border-radius: 50px 0 0 50px;
+        }
+
+        li:last-child {
+            border-radius: 0 50px 50px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        body {
+            background: silver;
+        }
+
+        div {
+            font-size: 15px;
+            font-weight: bold;
+            color: blue;
+        }
+
+        #top {
+            width: 855px;
+            height: 80px;
+            background: lime;
+            padding: 2px;
+        }
+
+        #top2 {
+            background-color: black;
+            color: yellow;
+            border-radius: 100px 10px;
+            width: 250px;
+            height: 100px;
+            position: fixed;
+            top: 5px;
+            right: 5px;
+            border: 10px dotted;
+            box-shadow: 10px 10px azure;
+        }
+
+        #center {
+            padding: 30px;
+            width: 800px;
+            height: 650px;
+            background: pink;
+        }
+        #하고싶은말 {
+            width: 220px;
+            height: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="total">
+        <div id="top">
+            <!-- 메뉴들어갈 부분 -->
+            <ul>
+                <li>
+                    <a href="page20.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="page30.html">제품정보</a>
+                </li>
+                <li>
+                    <a href="page10.html">게시판</a>
+                </li>
+                <li>
+                    <a href="page40.html">장바구니</a>
+                </li>
+            </ul>
+        </div>
+        <div id="top2">
+            <!-- 고정된 화면 (장바구니)-->
+            장바구니
+        </div>
+        <div id="center">
+            <!-- 해당페이지 화면 -->
+            <h3>검색할 단어 입력</h3>
+            <hr color="red">
+            <form action="">
+                검색어 <input type="text">
+                <button>검색하기</button>
+            </form>
+            <hr color="red">
+            <table border="1">
+                <form action="">
+                    <tr align="center">
+                        <td width="80">아이디</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr align="center">
+                        <td width="80">비밀번호</td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2"><button>로그인하기</button></td>
+                    </tr>
+                    <tr align="center">
+                        <td width="80">이름</td>
+                        <td><input type="text" placeholder="성과 이름을 순서대로 쓰세요"></td>
+                    </tr>
+                    <tr align="center">
+                        <td width="80">성별</td>
+                        <td>남<input type="radio" name="gender">여<input type="radio" name="gender"></td>
+                    </tr>
+                    <tr align="center">
+                        <td width="80">취미</td>
+                        <td>등산<input type="checkbox" name="hobby" id="">
+                            악기연주<input type="checkbox" name="hobby" id="">
+                            독서<input type="checkbox" name="hobby" id=""></td>
+                    </tr>
+                    <tr align="center">
+                        <td width="80">전화번호</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="SKT">SKT</option>
+                                <option value="KT">KT</option>
+                                <option value="LGU">LGU+</option>
+                                <option value="알뜰폰">알뜰폰</option>
+                            </select>
+                            <input type="number" placeholder="-없이 숫자만 입력하세요">
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>생년월일</td>
+                        <td><input type="date" name="생년월일" id=""></td>
+                    </tr>
+                    <tr align="center">
+                        <td>가입한 시기</td>
+                        <td><input type="datetime-local" name="가입한시기" id=""></td>
+                    </tr>
+                    <tr align="center">
+                        <td>가입한 주</td>
+                        <td><input type="week" name="" id=""></td>
+                    </tr>
+                    <tr align="center">
+                        <td height="200">하고싶은말</td>
+                        <td><input type="text" placeholder="100글자 이내로 써주세요!" id="하고싶은말"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="2" height="40">
+                            <button>회원가입하기</button>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+            <hr color="red">
+        </div>
+    </div>
+</body>
+
+</html>

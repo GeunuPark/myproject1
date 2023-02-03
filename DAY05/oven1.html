@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="out.css">
+    <style>
+        body {
+            background-color: silver;
+        }
+
+        #search {
+            color: red;
+        }
+    </style>
+    <script>
+        function password() {
+            right_password = document.getElementById("password_enter")
+            right_password = parseInt(right_password)
+            if (right_password == '5696') {
+                alert("비밀번호가 일치합니다.")
+            } else {
+                alert("비밀번호가 일치하지 않습니다.")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="main">
+        <hr color="black">
+        <table align="center" border="10px" color="black">
+            <tr align="center">
+                <td width="80" heigt="50" bgcolor="silver">카드회사</td>
+                <td width="220" height="50" bgcolor="white">농협</td>
+            </tr>
+            <tr align="center">
+                <td width="80" heigt="50" bgcolor="silver">이름</td>
+                <td width="220" height="50" bgcolor="white">PARK GEUN WOO</td>
+            </tr>
+            <tr align="center">
+                <td width="80" heigt="50" bgcolor="silver">카드번호</td>
+                <td width="220" height="50" bgcolor="white">9441-1776-4354-5068</td>
+            </tr>
+            <tr align="center">
+                <td width="80" heigt="50" bgcolor="silver">카드유효기간</td>
+                <td width="220" height="50" bgcolor="white">12/29</td>
+            </tr>
+            <tr align="center">
+                <td width="80" heigt="50" bgcolor="silver">카드이름</td>
+                <td width="220" height="50" bgcolor="white">농협내일배움카드</td>
+            </tr>
+            <tr align="center">
+                <td width="80" height="200" bgcolor="silver">제품이미지</td>
+                <td width="220" heght=200 bgcolor="white"><img src="다운로드.jpg" alt="신발사진" width="200" height="190">
+                </td>
+            </tr>
+        </table>
+        <hr color="black">
+        <div id="search" align="center">
+            <table align="center">
+                <form action="">비밀번호 입력 :
+                    <input type="text" value="" id="password_enter">
+                    <button onclick="password()">확인</button>
+                </form>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
