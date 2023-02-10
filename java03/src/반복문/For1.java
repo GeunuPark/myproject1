@@ -1,0 +1,25 @@
+package 반복문;
+
+public class For1 {
+
+	public static void main(String[] args) {
+		// 3번 반복
+//		for (int i = 0; i < 3; i++) {
+//			System.out.println(i + "내가 반복1");
+//		}
+		
+		for (int i = 0; i < 100; i++) {
+			System.out.println(i + "내가 반복2");
+		}
+		
+		for (int i = 1; i < 11; i++) {
+			System.out.println(i + "내가 반복3");
+		}
+		
+		
+		
+		
+		
+	}
+
+}
